@@ -207,7 +207,7 @@ export default function Hero() {
           <h1>Our sponsors</h1>
         </div>
         <div className='sponsors'>
-          <img src={sponsors} alt="sponsors" height={50} width={950} />
+          <img src={sponsors} alt="sponsors" />
 
         </div>
       </div>
@@ -326,7 +326,7 @@ export default function Hero() {
         </div>
       </div>
       <div className='Bro9'>
-        <img src={last} alt="" height={20} width={1400} />
+        <img src={last} alt="" style={{ width: '100%', height: 'auto' }} />
       </div>
 
     </>

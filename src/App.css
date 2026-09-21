@@ -1,457 +1,912 @@
+/* ====== GLOBAL RESET ====== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ====== SECTION: Bro (Hero wrapper) ====== */
 .Bro {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 60px;
+  padding: 60px 40px 10px;
   color: white;
   background-color: #043873;
-  padding-bottom: 10px;
-
 }
+
+.Bro1 {
+  background-color: #043873;
+}
+
 .hero {
   display: flex;
   flex-direction: row;
-  padding-bottom: 100px;
-  padding-right: 120px;
-  padding-left: 120px;
+  padding: 40px 60px 100px;
   justify-content: space-evenly;
-
+  align-items: center;
+  gap: 40px;
 }
+
+/* ====== NAVIGATION ====== */
 .navigation {
-  justify-content: center;
-  margin-top: 0px;
+  justify-content: space-between;
+  margin-top: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px 20px;
-  padding-top: 30px;
+  padding: 20px 40px;
   background-color: #043873;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .nav-links {
   display: flex;
   flex-direction: row;
-  padding-left: 200px;
+  padding-left: 0;
   color: white;
   list-style: none;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin: 0;
 }
+
 .A {
-padding: 30px;
-border-color: none;
-color: white;
-text-decoration: none;
+  padding: 10px 15px;
+  border-color: none;
+  color: white;
+  text-decoration: none;
 }
+
+/* ====== HERO TEXT ====== */
 .Asta {
- max-width: 600px;
- padding-top: 100px;
- 
-
+  max-width: 600px;
+  padding-top: 60px;
 }
 
-.Asta h1{
-font-size: 2.8rem;
-font-weight: bold;
-margin-bottom: 20px;
+.Asta h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
+
 .Asta p {
   font-size: 1rem;
   line-height: 1.6;
   color: white;
   margin-bottom: 30px;
 }
+
+/* ====== BLUE BOX / IMAGE PLACEHOLDER ====== */
 .Royal {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #c4defd;
   color: white;
-  height: 400px;
-  width: 600px;
-  
+  height: 350px;
+  width: 100%;
+  max-width: 550px;
+  flex-shrink: 0;
 }
+
+/* ====== BUTTONS ====== */
 .btn {
   background-color: #4f9cf9;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
-  margin:10px;
-  padding-top: 30;
-
+  margin: 10px 0;
 }
 
-.bro1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 0px;
-  margin: 0px;
- 
+.btn1 {
+  background-color: white;
+  color: black;
+  padding: 12px 24px;
+  border: #ffe492 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px;
 }
+
+.btn2 {
+  background-color: #4f9cf9;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+/* ====== SECTION: Bro2 ====== */
 .Bro2 {
-  margin: 50px;
+  padding: 20px 40px;
 }
-.sub1{
+
+.sub1 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   padding-top: 50px;
- 
+  gap: 40px;
 }
+
 .Asta1 {
- max-width: 600px;
- padding-top: 100px;
- width: 550px;
-
+  max-width: 550px;
+  width: 100%;
+  padding-top: 50px;
 }
 
-.Asta1 h1{
- font-size: 2.8rem;
- font-weight: bold;
- margin-bottom: 20px;
- width: 300px;
-
-
-
+.Asta1 h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
+
 .Asta1 p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 30px;
-  width: 520px;
- 
 }
-.sub2{
+
+.sub2 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 100px;
-  ;
- 
+  padding-top: 80px;
+  gap: 40px;
 }
-.Bro3 {
-  margin: 75px;
-}
-.Royal11 {
-  display: flex;
-  height: 500px;
-  width: 600px;
-}
+
+/* ====== SECTION: Bro3 (Pricing) ====== */
 .Bro3 {
   display: flex;
   flex-direction: column;
+  padding: 40px 20px;
 }
+
+.Royal11 {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+}
+
 .Hero1 {
   display: flex;
   flex-direction: column;
   align-items: center;
- padding: 60px ;
+  padding: 60px 20px;
+  text-align: center;
+}
 
-}
 .Hero1 p {
- width: 790px;
+  max-width: 790px;
+  width: 100%;
 }
+
 .Hero2 {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
-  justify-content: space-between;
-
+  align-items: stretch;
+  padding: 0 40px;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
+
+/* ====== PRICING CARDS ====== */
 .Raju {
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  margin: 0px;
-  width: 365px;
+  margin: 0;
+  width: 100%;
+  max-width: 365px;
   border: #ffe492 2px solid;
   border-radius: 10px;
-  
-
+  flex: 1 1 300px;
 }
+
 .vasu {
   display: flex;
   flex-direction: column;
   background-color: #043873;
   padding: 10px;
-  margin: 0px;
-  height: 600px;
-  width: 360px;
+  margin: 0;
+  width: 100%;
+  max-width: 365px;
   border-radius: 10px;
+  flex: 1 1 300px;
 }
+
+.mani1 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.mani2 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
 .mani3 {
   display: flex;
   flex-direction: column;
   color: white;
   padding-top: 50px;
-  margin: 0px;
-  width: 300px;
+  margin: 0;
+  width: 100%;
+  max-width: 300px;
   padding-left: 20px;
-
-
 }
+
 .mani4 {
   display: flex;
   flex-direction: column;
   color: white;
   padding-left: 20px;
 }
-.mani2 {
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;;
 
-}
-.mani1 {
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-
+.checkmark {
+  padding-right: 10px;
 }
 
-.btn1 {
-  background-color: white;
-  color: black;
-  padding: 10px 20px;
-  border: #ffe492 1px solid;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  margin:10px;
-  padding-top: 50;
-  padding-left: 20px;
-
-}
-.btn2 {
-  background-color: #4f9cf9;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  margin:10px;
-  padding-top: 50;
-  padding-left: 20px;
-}
+/* ====== SECTION: Bro4 (Work everywhere) ====== */
 .Bro4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 60px 40px;
   justify-content: center;
   color: white;
   background-color: #043873;
-  height: 350px;
   width: 100%;
+  text-align: center;
 }
+
 .Hero3 {
   flex-direction: column;
   display: flex;
   text-align: center;
+  max-width: 800px;
 }
-.checkmark {
-  padding-right: 10px;
-}
+
+/* ====== SECTION: sub3 (100% your data) ====== */
 .sub3 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 100px;
- 
+  padding: 80px 40px;
+  gap: 40px;
 }
+
 .sub3 h1 {
-  width: 500px;
-
+  max-width: 500px;
+  width: 100%;
 }
+
 .sub3 p {
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
   padding-bottom: 30px;
-
 }
+
+.Element {
+  max-width: 500px;
+  width: 100%;
+}
+
+/* ====== SECTION: Bro5 (Sponsors) ====== */
 .Bro5 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 100px;
+  padding: 60px 40px;
 }
+
 .ram {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
+  text-align: center;
 }
-.ram h1{
-  font-size: 3.5rem;
+
+.ram h1 {
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
+
+.sponsors {
+  width: 100%;
+  max-width: 950px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ====== SECTION: Apps ====== */
 .Apps {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 50px;
-  background-color:  #043873;
+  padding: 50px 40px;
+  background-color: #043873;
   color: white;
-  padding-bottom: 50px;
+  gap: 40px;
 }
-.Apps h1 {
-  width: 400px;
 
+.Apps h1 {
+  max-width: 400px;
+  width: 100%;
 }
+
 .Apps p {
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
   padding-bottom: 30px;
 }
+
+/* ====== SECTION: Bro6 (Testimonials) ====== */
 .Bro6 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 100px;
+  padding: 60px 40px;
 }
+
 .Hero4 {
-  padding: 50px;
-  font-size: 1.5rem ;
+  padding: 30px 20px;
+  font-size: 1.5rem;
   font-weight: bold;
-  align-items: center;
-  padding-bottom: 80px;
+  text-align: center;
+  padding-bottom: 50px;
 }
+
 .Hero5 {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  
-
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
+
+.sri2 {
+  padding: 0;
+  flex: 1 1 300px;
+  max-width: 380px;
+}
+
 .main4 {
   background-color: #4f9cf9;
-  height: 400px;
-  width: 350px;
+  min-height: 380px;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
- 
 }
-.sri2{
-  padding-left: 50px;
- 
-}
+
 .main5 {
-  height: 400px;
-  width: 350px;
+  min-height: 380px;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 }
+
 .j {
   border: 1px solid white;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
+
 .k {
   border: 1px solid black;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
+
 .slider {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 40px;
+  padding: 40px 20px;
 }
+
+/* ====== SECTION: Bro7 (Try Whitepace) ====== */
 .Bro7 {
   background-color: #043873;
   color: white;
   display: flex;
-  padding: 20px;
- padding-top: 50;
+  padding: 40px 20px;
+  justify-content: center;
 }
+
 .Hero6 {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding-top: 75px;
- 
+  padding-top: 50px;
+  width: 100%;
 }
+
 .villon {
-  padding-left: 590px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  
+  justify-content: center;
+  text-align: center;
 }
+
 .villon h1 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: bold;
   margin-bottom: 20px;
-  width: 300px;
-
+  width: auto;
 }
+
+/* ====== SECTION: Bro8 (Footer) ====== */
 .Bro8 {
   display: flex;
   background-color: #043873;
   color: white;
 }
+
 .Hero7 {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding: 50px 40px;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 30px;
 }
+
 .om1 {
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
-  padding-right: 80px;
-  width: 340px;
+  padding: 0 20px;
+  max-width: 300px;
+  width: 100%;
+  flex: 1 1 200px;
 }
-.om2{
+
+.om2 {
   display: flex;
   flex-direction: column;
-  padding-right: 0px;
-  padding-left:50px;
-  width: 300px;
+  padding: 0 20px;
+  max-width: 200px;
+  width: 100%;
+  flex: 1 1 150px;
 }
+
 .nav-link {
   color: white;
   list-style: none;
+  padding-left: 0;
 }
+
 .B {
   border-color: none;
   color: white;
   text-decoration: none;
 }
+
 .om3 {
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 300px;
-  padding-right: 70px;
+  max-width: 300px;
+  width: 100%;
+  flex: 1 1 200px;
 }
-.Bro9{
+
+/* ====== SECTION: Bro9 (Bottom bar) ====== */
+.Bro9 {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #043873;
   padding-bottom: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+}
+
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================ */
+
+/* ====== MOBILE (max-width: 640px) ====== */
+@media (max-width: 640px) {
+
+  /* Navigation */
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+  }
+
+  .A {
+    padding: 8px 12px;
+  }
+
+  .btn,
+  .btn1,
+  .btn2 {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    width: auto;
+  }
+
+  /* Hero Section */
+  .Bro {
+    padding: 30px 20px 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 15px 40px;
+    gap: 30px;
+  }
+
+  .Asta {
+    padding-top: 30px;
+    max-width: 100%;
+  }
+
+  .Asta h1 {
+    font-size: 2rem;
+  }
+
+  .Royal {
+    max-width: 100%;
+    height: 250px;
+  }
+
+  /* Sub-sections */
+  .Bro2 {
+    padding: 20px 15px;
+  }
+
+  .sub1,
+  .sub2,
+  .sub3 {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  .sub3 h1,
+  .sub3 p {
+    max-width: 100%;
+  }
+
+  .Asta1 {
+    padding-top: 20px;
+    max-width: 100%;
+  }
+
+  .Asta1 h1 {
+    font-size: 1.8rem;
+    width: auto;
+  }
+
+  .Asta1 p {
+    width: auto;
+  }
+
+  .Royal11 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Pricing Section */
+  .Bro3 {
+    padding: 20px 10px;
+  }
+
+  .Hero1 {
+    padding: 30px 15px;
+  }
+
+  .Hero1 p {
+    max-width: 100%;
+  }
+
+  .Hero2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    gap: 20px;
+  }
+
+  .Raju,
+  .vasu {
+    max-width: 100%;
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .vasu {
+    height: auto;
+  }
+
+  /* Work everywhere */
+  .Bro4 {
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .Hero3 p {
+    font-size: 0.95rem;
+  }
+
+  /* Sponsors */
+  .Bro5 {
+    padding: 40px 20px;
+  }
+
+  .ram h1 {
+    font-size: 2rem;
+  }
+
+  /* Apps */
+  .Apps {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .Apps h1 {
+    max-width: 100%;
+  }
+
+  .Apps p {
+    max-width: 100%;
+  }
+
+  /* Testimonials */
+  .Bro6 {
+    padding: 40px 15px;
+  }
+
+  .Hero4 {
+    font-size: 1.1rem;
+    padding-bottom: 30px;
+  }
+
+  .Hero5 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .sri2 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .main4,
+  .main5 {
+    width: 100%;
+    min-height: auto;
+  }
+
+  /* Try Whitepace */
+  .Bro7 {
+    padding: 30px 15px;
+  }
+
+  .Hero6 {
+    padding-top: 20px;
+  }
+
+  .villon h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Footer */
+  .Hero7 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 25px;
+  }
+
+  .om1,
+  .om2,
+  .om3 {
+    max-width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nav-link {
+    padding-left: 0;
+  }
+
+  /* Bottom bar */
+  .Bro9 img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* ====== TABLET (641px – 1024px) ====== */
+@media (min-width: 641px) and (max-width: 1024px) {
+
+  /* Navigation */
+  .navigation {
+    padding: 20px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 40px 60px;
+    gap: 30px;
+  }
+
+  .Asta {
+    max-width: 100%;
+    padding-top: 40px;
+  }
+
+  .Asta h1 {
+    font-size: 2.4rem;
+  }
+
+  .Royal {
+    max-width: 80%;
+    height: 300px;
+  }
+
+  /* Sub-sections */
+  .Bro2 {
+    padding: 20px 30px;
+  }
+
+  .sub1,
+  .sub2,
+  .sub3 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .Royal11 {
+    max-width: 80%;
+  }
+
+  .Asta1 {
+    max-width: 100%;
+  }
+
+  .Asta1 h1 {
+    width: auto;
+  }
+
+  .Asta1 p {
+    width: auto;
+  }
+
+  /* Pricing */
+  .Hero2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 30px;
+    gap: 20px;
+  }
+
+  .Raju,
+  .vasu {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  /* Work everywhere */
+  .Bro4 {
+    padding: 50px 30px;
+    height: auto;
+  }
+
+  /* Apps */
+  .Apps {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  /* Testimonials */
+  .Hero5 {
+    gap: 20px;
+  }
+
+  .sri2 {
+    max-width: 45%;
+    flex: 1 1 280px;
+  }
+
+  /* Footer */
+  .Hero7 {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 30px;
+    gap: 25px;
+  }
+
+  .om1,
+  .om2,
+  .om3 {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+/* ====== LARGE DESKTOP (1025px+) ====== */
+@media (min-width: 1025px) {
+  .hero {
+    gap: 50px;
+  }
+
+  .Hero2 {
+    gap: 30px;
+  }
 }
